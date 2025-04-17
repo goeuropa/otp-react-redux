@@ -1,1 +1,157 @@
-{}
+_id: pl
+_name: Polski
+actions:
+  callTaker:
+    callQuerySaveError: "Błąd podczas zapisywania zapytań rozmowy: {err}"
+    callSaveError: "Nie można zapisać rozmowy: {err}"
+    checkSessionError: "Błąd podczas ustanawiania sesji uwierzytelniania: {err}"
+    couldNotFindCallError: "Nie można znaleźć rozmowy. Anulowanie żądania zapisania zapytań."
+    fetchCallsError: "Błąd podczas pobierania rozmów: {err}"
+    queryFetchError: "Błąd podczas pobierania zapytań: {err}"
+  fieldTrip:
+    addNoteError: "Błąd podczas dodawania notatki wycieczki terenowej:"
+    confirmOverwriteItineraries: |
+      Ta akcja nadpisze wcześniej zaplanowany {outbound, select,
+        true {plan wyjazdu}
+        other {plan powrotu}
+      } dla tego zgłoszenia. Czy chcesz kontynuować?
+    deleteItinerariesError: "Błąd podczas usuwania planu wycieczki terenowej:"
+    deleteNoteError: "Błąd podczas usuwania notatki wycieczki terenowej:"
+    editSubmitterNotesError: "Błąd podczas edycji notatek składającego:"
+    fetchFieldTripError: "Błąd podczas pobierania wycieczki terenowej: {err}"
+    fetchFieldTripsError: "Błąd podczas pobierania wycieczek terenowych: {err}"
+    fetchTripsForDateError: "Błąd podczas pobierania wycieczek dla daty podróży wycieczki terenowej: {err}"
+    incompatibleTripDateError: >-
+      Zaplanowana data wycieczki ({tripDate}) nie jest żądanym dniem podróży
+      ({requestDate})
+    itineraryCapacityError: >-
+      Nie można zapisać planu: Plan nie mógł zostać zapisany z powodu braku miejsc
+      w jednym lub więcej pojazdów. Proszę zaplanować wycieczkę ponownie.
+    maxTripRequestsExceeded: "Przekroczono liczbę żądań wycieczek bez ważnych wyników"
+    saveItinerariesError: "Nie udało się zapisać planów podróży: {err}"
+    setDateError: "Błąd podczas ustawiania daty:"
+    setGroupSizeError: "Błąd podczas ustawiania wielkości grupy:"
+    setPaymentError: "Błąd podczas ustawiania informacji o płatności:"
+    setRequestStatusError: "Błąd podczas ustawiania statusu żądania:"
+  location:
+    deniedAccessAlert: >
+      Dostęp do Twojej lokalizacji jest zablokowany.
+
+      Aby użyć Twojej bieżącej lokalizacji, włącz uprawnienia lokalizacji w swojej
+      przeglądarce i odśwież stronę.
+    geolocationNotSupportedError: "Geolokalizacja nie jest obsługiwana przez Twoją przeglądarkę"
+    unknownPositionError: "Nieznany błąd podczas pobierania pozycji"
+    userDeniedPermission: "Użytkownik odmówił uprawnień"
+  map:
+    currentLocation: "(Bieżąca lokalizacja)"
+  user:
+    accountDeleted: "Twoje konto użytkownika ({email}) zostało usunięte."
+    authTokenError: "Błąd podczas uzyskiwania tokenu autoryzacyjnego."
+    confirmDeleteMonitoredTrip: "Czy chcesz usunąć tę wycieczkę?"
+    confirmDeletePlace: "Czy chcesz usunąć to miejsce?"
+    emailVerificationResent: "Wiadomość weryfikacyjna e-mail została wysłana ponownie."
+    genericError: "Wystąpił błąd: {err}"
+    itineraryExistenceCheckFailed: "Błąd podczas sprawdzania, czy wybrana wycieczka jest możliwa."
+    mustAcceptTermsToSavePlace: "Aby zapisać lokalizacje, zaakceptuj Warunki użytkowania (w Moje konto)."
+    mustBeLoggedInToSavePlace: "Zaloguj się, aby zapisać lokalizacje."
+    placeRemembered: "Ustawienia dla tego miejsca zostały zapisane."
+    preferencesSaved: "Twoje preferencje zostały zapisane."
+    smsInvalidCode: "Wprowadzony kod jest nieprawidłowy. Spróbuj ponownie."
+    smsResendThrottled: >-
+      Weryfikacyjny SMS został wysłany na wskazany numer telefonu mniej niż minutę temu.
+      Spróbuj ponownie za kilka chwil.
+    smsVerificationFailed: >-
+      Nie udało się zweryfikować Twojego telefonu. Być może wprowadzony kod wygasł.
+      Poproś o nowy kod i spróbuj ponownie.
+common:
+  coordinates: "{lat}, {lon}"
+  dateExpressions:
+    today: "Dzisiaj"
+    tomorrow: "Jutro"
+    yesterday: "Wczoraj"
+  daysOfWeek:
+    friday: "Piątek"
+    monday: "Poniedziałek"
+    saturday: "Sobota"
+    sunday: "Niedziela"
+    thursday: "Czwartek"
+    tuesday: "Wtorek"
+    wednesday: "Środa"
+  daysOfWeekCompact:
+    friday: "Pt"
+    monday: "Pn"
+    saturday: "Sb"
+    sunday: "Nd"
+    thursday: "Cz"
+    tuesday: "Wt"
+    wednesday: "Śr"
+  daysOfWeekPlural:
+    friday: "Piątki"
+    monday: "Poniedziałki"
+    saturday: "Soboty"
+    sunday: "Niedziele"
+    thursday: "Czwartki"
+    tuesday: "Wtorki"
+    wednesday: "Środy"
+  forms:
+    back: "Wstecz"
+    cancel: "Anuluj"
+    close: "Zamknij"
+    defaultValue: "{value} (domyślnie)"
+    edit: "Edytuj"
+    error: "Błąd!"
+    finish: "Zakończ"
+    next: "Dalej"
+    "no": "Nie"
+    print: "Drukuj"
+    save: "Zapisz"
+    startOver: "Zacznij od nowa"
+    submitting: "Wysyłanie…"
+    "yes": "Tak"
+  itineraryDescriptions:
+    fareUnknown: "Brak informacji o opłacie"
+    noItineraryToDisplay: "Brak planu podróży do wyświetlenia."
+    relativeCo2: |
+      {co2} {isMore, select, true {więcej} other {mniej} } CO₂ niż jazda samochodem w pojedynkę
+    timeStartEnd: "{start} – {end}"
+  linkOpensNewWindow: "(Otwiera nowe okno)"
+  modes:
+    bicycle_rent: "Wypożyczalnia rowerów"
+    bike: "Rower"
+    bus: "Autobus"
+    cable_car: "Kolej linowo-terenowa"
+    car: "Samochód"
+    car_park: "Parkuj i jedź"
+    drive: "Jazda samochodem"
+    ferry: "Prom"
+    flex: "Trasy elastyczne"
+    funicular: "Kolej szynowa"
+    gondola: "Gondola"
+    micromobility: "Hulajnoga elektryczna"
+    micromobility_rent: "Hulajnoga elektryczna"
+    rail: "Kolej"
+    rent: "Opcje wynajmu"
+    subway: "Metro"
+    tram: "Tramwaj"
+    transit: "Transport publiczny"
+    walk: "Pieszo"
+  notifications:
+    email: "e-mail"
+    push: "powiadomienia push"
+    sms: "SMS"
+  places:
+    custom: "niestandardowe"
+    dining: "restauracja"
+    home: "dom"
+    work: "praca"
+  routing:
+    routeAndNumber: "Linia {routeId}"
+  searchForms:
+    click: "kliknij"
+    enterDestination: "Wprowadź cel podróży lub {mapAction} na mapie…"
+    enterStartLocation: "Wprowadź lokalizację początkową lub {mapAction} na mapie…"
+    tap: "dotknij"
+  time:
+    duration:
+      aFewSeconds: "kilka sekund"
+      nDays: "{days, plural, =1 {jeden dzień} other {# dni}}"
